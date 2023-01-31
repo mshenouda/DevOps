@@ -1,0 +1,7 @@
+
+<h1 class="h1">List books</h1>
+<input type="button" class="button" value="ListBooks" (click)="listBooks()">
+<div *ngFor="let book of books">
+    <span class="book">{{book.id}} </span>
+    <span class="book">{{book.title}}</span>
+</div>

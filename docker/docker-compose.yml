@@ -1,0 +1,21 @@
+version: '2.2'
+
+services:
+    api:
+        build: ./api
+        container_name: api_c
+        ports:
+            - "4000:4000" 
+        volumes:
+            - ./api:/api
+            # - ./api/node_modules
+    frontend:
+        build: ./frontend
+        container_name: frontend_c
+        ports:
+            - "4200:4200"
+        volumes:
+            # - type: bind
+            - ./frontend:/frontend
+            # - stdin_open: true
+            # - tty: true

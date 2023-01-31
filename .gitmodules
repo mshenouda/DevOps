@@ -1,0 +1,3 @@
+[submodule "CICD/python-demoapp"]
+	path = CICD/python-demoapp
+	url = git@github.com:mshenouda/DevOps.git
